@@ -699,12 +699,12 @@
   },
   "dependencies": {
     "@better-auth/utils": "0.2.6",
-    "@better-fetch/fetch": "catalog:",
+    "@better-fetch/fetch": "^1.1.18",
     "@noble/ciphers": "^0.6.0",
     "@noble/hashes": "^1.8.0",
     "@simplewebauthn/browser": "^13.1.2",
     "@simplewebauthn/server": "^13.1.2",
-    "better-call": "catalog:",
+    "better-call": "1.0.15",
     "defu": "^6.1.4",
     "jose": "^5.10.0",
     "kysely": "^0.28.5",
@@ -751,8 +751,8 @@
     "tarn": "^3.0.2",
     "tedious": "^18.6.1",
     "type-fest": "^4.41.0",
-    "typescript": "catalog:",
-    "unbuild": "catalog:",
+    "typescript": "^5.9.2",
+    "unbuild": "^3.5.0",
     "vue": "^3.5.18"
   },
   "overrides": {
