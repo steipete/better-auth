@@ -14,7 +14,7 @@ export default defineBuildConfig({
 	externals: [
 		"prisma",
 		"@prisma/client",
-		"better-sqlite3",
+		// "better-sqlite3", // Removed for Edge runtime compatibility
 		"react",
 		"vue",
 		"solid-js",
@@ -116,6 +116,6 @@ export default defineBuildConfig({
 		"./src/plugins/haveibeenpwned/index.ts",
 		"./src/plugins/one-time-token/index.ts",
 		"./src/plugins/siwe/index.ts",
-		"./src/test-utils/index.ts",
+		// Test utils removed - not needed in production builds
 	],
 });

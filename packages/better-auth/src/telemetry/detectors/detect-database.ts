@@ -5,8 +5,7 @@ const DATABASES: Record<string, string> = {
 	pg: "postgresql",
 	mysql: "mysql",
 	mariadb: "mariadb",
-	sqlite3: "sqlite",
-	"better-sqlite3": "sqlite",
+	// SQLite removed for Edge runtime compatibility
 	"@prisma/client": "prisma",
 	mongoose: "mongodb",
 	mongodb: "mongodb",
