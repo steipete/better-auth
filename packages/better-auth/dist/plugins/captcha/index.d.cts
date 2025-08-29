@@ -1,0 +1,45 @@
+import { p as AuthContext } from '../../shared/better-auth.C0MfnhMy.cjs';
+import 'kysely';
+import 'better-call';
+import 'zod/v4';
+import '../../shared/better-auth.DTtXpZYr.cjs';
+import '../../shared/better-auth.C7l4WiP6.cjs';
+import 'jose';
+import 'zod/v4/core';
+import 'zod';
+import 'better-sqlite3';
+import 'bun:sqlite';
+import 'node:sqlite';
+
+declare const Providers: {
+    readonly CLOUDFLARE_TURNSTILE: "cloudflare-turnstile";
+    readonly GOOGLE_RECAPTCHA: "google-recaptcha";
+    readonly HCAPTCHA: "hcaptcha";
+};
+
+interface BaseCaptchaOptions {
+    secretKey: string;
+    endpoints?: string[];
+    siteVerifyURLOverride?: string;
+}
+interface GoogleRecaptchaOptions extends BaseCaptchaOptions {
+    provider: typeof Providers.GOOGLE_RECAPTCHA;
+    minScore?: number;
+}
+interface CloudflareTurnstileOptions extends BaseCaptchaOptions {
+    provider: typeof Providers.CLOUDFLARE_TURNSTILE;
+}
+interface HCaptchaOptions extends BaseCaptchaOptions {
+    provider: typeof Providers.HCAPTCHA;
+    siteKey?: string;
+}
+type CaptchaOptions = GoogleRecaptchaOptions | CloudflareTurnstileOptions | HCaptchaOptions;
+
+declare const captcha: (options: CaptchaOptions) => {
+    id: "captcha";
+    onRequest: (request: Request, ctx: AuthContext) => Promise<{
+        response: Response;
+    } | undefined>;
+};
+
+export { captcha };
