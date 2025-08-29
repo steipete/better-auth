@@ -51,6 +51,16 @@
         "default": "./dist/client/react/index.cjs"
       }
     },
+    "./react": {
+      "import": {
+        "types": "./dist/client/react/index.d.ts",
+        "default": "./dist/client/react/index.mjs"
+      },
+      "require": {
+        "types": "./dist/client/react/index.d.cts",
+        "default": "./dist/client/react/index.cjs"
+      }
+    },
     "./plugins": {
       "import": {
         "types": "./dist/plugins/index.d.ts",
