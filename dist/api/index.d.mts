@@ -7,6 +7,3 @@ import 'zod';
 import 'zod/v4';
 import 'jose';
 import 'kysely';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';

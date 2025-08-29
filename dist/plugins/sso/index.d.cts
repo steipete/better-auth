@@ -7,9 +7,6 @@ import 'jose';
 import 'kysely';
 import 'zod/v4/core';
 import 'zod';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';
 
 interface SSOOptions {
     /**

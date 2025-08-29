@@ -35,9 +35,6 @@ import '../../shared/better-auth.XX3IEFux.mjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';
 
 interface OrganizationClientOptions {
     ac?: AccessControl;

@@ -7,9 +7,6 @@ import '../../shared/better-auth.BrqjqzND.js';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';
 
 declare function getKyselyDatabaseType(db: BetterAuthOptions["database"]): KyselyDatabaseType | null;
 declare const createKyselyAdapter: (config: BetterAuthOptions) => Promise<{

@@ -10,9 +10,6 @@ import { O as OAuth2Tokens, a as OAuth2UserInfo } from '../shared/better-auth.XX
 import * as zod from 'zod';
 import { Kysely } from 'kysely';
 import 'zod/v4';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';
 import 'jose';
 
 declare function getTestInstanceMemory<O extends Partial<BetterAuthOptions>, C extends ClientOptions>(options?: O, config?: {

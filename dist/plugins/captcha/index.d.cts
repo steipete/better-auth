@@ -7,9 +7,6 @@ import '../../shared/better-auth.e9wCjqAx.cjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';
 
 declare const Providers: {
     readonly CLOUDFLARE_TURNSTILE: "cloudflare-turnstile";

@@ -8,9 +8,6 @@ import 'kysely';
 import 'zod/v4';
 import '../../shared/better-auth.XX3IEFux.mjs';
 import 'zod/v4/core';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';
 
 declare const schema: {
     jwks: {

@@ -11,9 +11,6 @@ export { A as Awaitable, D as DeepPartial, E as Expand, H as HasRequiredKeys, d 
 export { O as OAuth2Tokens, a as OAuth2UserInfo, b as OAuthProvider, P as ProviderOptions } from './shared/better-auth.e9wCjqAx.cjs';
 import 'kysely';
 import 'zod';
-import 'better-sqlite3';
-import 'bun:sqlite';
-import 'node:sqlite';
 import '@better-fetch/fetch';
 import 'nanostores';
 import 'jose';
