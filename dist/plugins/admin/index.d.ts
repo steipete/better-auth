@@ -1,10 +1,10 @@
 import { AccessControl, Role, Statements } from '../access/index.js';
 import * as better_call from 'better-call';
 import * as z from 'zod/v4';
-import { I as InferOptionSchema, S as Session, U as User, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.DYl3hECa.js';
+import { I as InferOptionSchema, S as Session, U as User, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.DtcwfLkb.js';
 import '../../shared/better-auth.DTtXpZYr.js';
 import 'kysely';
-import '../../shared/better-auth.CZoC82JS.js';
+import '../../shared/better-auth.BrqjqzND.js';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
@@ -446,7 +446,7 @@ declare const admin: <O extends AdminOptions>(options?: O) => {
             } & {
                 query: {
                     searchValue?: string | undefined;
-                    searchField?: "email" | "name" | undefined;
+                    searchField?: "name" | "email" | undefined;
                     searchOperator?: "contains" | "starts_with" | "ends_with" | undefined;
                     limit?: string | number | undefined;
                     offset?: string | number | undefined;
@@ -454,7 +454,7 @@ declare const admin: <O extends AdminOptions>(options?: O) => {
                     sortDirection?: "asc" | "desc" | undefined;
                     filterField?: string | undefined;
                     filterValue?: string | number | boolean | undefined;
-                    filterOperator?: "eq" | "ne" | "lt" | "lte" | "gt" | "gte" | "contains" | undefined;
+                    filterOperator?: "contains" | "eq" | "ne" | "lt" | "lte" | "gt" | "gte" | undefined;
                 };
             } & {
                 params?: Record<string, any>;
@@ -501,8 +501,8 @@ declare const admin: <O extends AdminOptions>(options?: O) => {
                 query: z.ZodObject<{
                     searchValue: z.ZodOptional<z.ZodString>;
                     searchField: z.ZodOptional<z.ZodEnum<{
-                        email: "email";
                         name: "name";
+                        email: "email";
                     }>>;
                     searchOperator: z.ZodOptional<z.ZodEnum<{
                         contains: "contains";
@@ -519,13 +519,13 @@ declare const admin: <O extends AdminOptions>(options?: O) => {
                     filterField: z.ZodOptional<z.ZodString>;
                     filterValue: z.ZodOptional<z.ZodUnion<[z.ZodUnion<[z.ZodString, z.ZodNumber]>, z.ZodBoolean]>>;
                     filterOperator: z.ZodOptional<z.ZodEnum<{
+                        contains: "contains";
                         eq: "eq";
                         ne: "ne";
                         lt: "lt";
                         lte: "lte";
                         gt: "gt";
                         gte: "gte";
-                        contains: "contains";
                     }>>;
                 }, z.core.$strip>;
                 metadata: {

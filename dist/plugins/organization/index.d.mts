@@ -1,5 +1,5 @@
 import * as z from 'zod/v4';
-import { U as User, S as Session, p as AuthContext, J as FieldAttribute, ai as InferAdditionalFieldsFromPluginOptions, G as GenericEndpointContext } from '../../shared/better-auth.D_5UBjqH.mjs';
+import { U as User, S as Session, p as AuthContext, J as FieldAttribute, ai as InferAdditionalFieldsFromPluginOptions, G as GenericEndpointContext } from '../../shared/better-auth.6m9muJRT.mjs';
 import { AccessControl, Role, Statements } from '../access/index.mjs';
 import * as better_call from 'better-call';
 import { Prettify } from 'better-call';
@@ -7,7 +7,7 @@ import { defaultRoles } from './access/index.mjs';
 export { adminAc, defaultAc, defaultStatements, memberAc, ownerAc } from './access/index.mjs';
 import 'kysely';
 import '../../shared/better-auth.DTtXpZYr.mjs';
-import '../../shared/better-auth.2HpcRfGI.mjs';
+import '../../shared/better-auth.XX3IEFux.mjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
@@ -353,8 +353,8 @@ declare const role: z.ZodString;
 declare const invitationStatus: z.ZodDefault<z.ZodEnum<{
     pending: "pending";
     accepted: "accepted";
-    canceled: "canceled";
     rejected: "rejected";
+    canceled: "canceled";
 }>>;
 declare const organizationSchema: z.ZodObject<{
     id: z.ZodDefault<z.ZodString>;
@@ -379,8 +379,8 @@ declare const invitationSchema: z.ZodObject<{
     status: z.ZodDefault<z.ZodEnum<{
         pending: "pending";
         accepted: "accepted";
-        canceled: "canceled";
         rejected: "rejected";
+        canceled: "canceled";
     }>>;
     teamId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     inviterId: z.ZodString;
@@ -411,12 +411,12 @@ type OrganizationInput = z.input<typeof organizationSchema>;
 type TeamInput = z.infer<typeof teamSchema>;
 declare const defaultRolesSchema: z.ZodUnion<readonly [z.ZodEnum<{
     owner: "owner";
-    member: "member";
     admin: "admin";
+    member: "member";
 }>, z.ZodArray<z.ZodEnum<{
     owner: "owner";
-    member: "member";
     admin: "admin";
+    member: "member";
 }>>]>;
 type CustomRolesSchema<O> = O extends {
     roles: {
@@ -4127,7 +4127,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                         id: string;
                         organizationId: string;
                         email: string;
-                        role: "owner" | "member" | "admin";
+                        role: "owner" | "admin" | "member";
                         status: InvitationStatus;
                         inviterId: string;
                         expiresAt: Date;
@@ -4139,7 +4139,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                     id: string;
                     organizationId: string;
                     email: string;
-                    role: "owner" | "member" | "admin";
+                    role: "owner" | "admin" | "member";
                     status: InvitationStatus;
                     inviterId: string;
                     expiresAt: Date;
@@ -5008,7 +5008,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                 response: {
                     id: string;
                     organizationId: string;
-                    role: "owner" | "member" | "admin";
+                    role: "owner" | "admin" | "member";
                     createdAt: Date;
                     userId: string;
                     user: {
@@ -5020,7 +5020,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
             } : {
                 id: string;
                 organizationId: string;
-                role: "owner" | "member" | "admin";
+                role: "owner" | "admin" | "member";
                 createdAt: Date;
                 userId: string;
                 user: {
@@ -5334,7 +5334,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                     sortDirection?: "asc" | "desc" | undefined;
                     filterField?: string | undefined;
                     filterValue?: string | number | boolean | undefined;
-                    filterOperator?: "eq" | "ne" | "lt" | "lte" | "gt" | "gte" | "contains" | undefined;
+                    filterOperator?: "contains" | "eq" | "ne" | "lt" | "lte" | "gt" | "gte" | undefined;
                     organizationId?: string | undefined;
                 } | undefined;
             } & {
@@ -5398,13 +5398,13 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                     filterField: z.ZodOptional<z.ZodString>;
                     filterValue: z.ZodOptional<z.ZodUnion<[z.ZodUnion<[z.ZodString, z.ZodNumber]>, z.ZodBoolean]>>;
                     filterOperator: z.ZodOptional<z.ZodEnum<{
+                        contains: "contains";
                         eq: "eq";
                         ne: "ne";
                         lt: "lt";
                         lte: "lte";
                         gt: "gt";
                         gte: "gte";
-                        contains: "contains";
                     }>>;
                     organizationId: z.ZodOptional<z.ZodString>;
                 }, z.core.$strip>>;
@@ -7478,7 +7478,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                         id: string;
                         organizationId: string;
                         email: string;
-                        role: "owner" | "member" | "admin";
+                        role: "owner" | "admin" | "member";
                         status: InvitationStatus;
                         inviterId: string;
                         expiresAt: Date;
@@ -7490,7 +7490,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                     id: string;
                     organizationId: string;
                     email: string;
-                    role: "owner" | "member" | "admin";
+                    role: "owner" | "admin" | "member";
                     status: InvitationStatus;
                     inviterId: string;
                     expiresAt: Date;
@@ -8359,7 +8359,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                 response: {
                     id: string;
                     organizationId: string;
-                    role: "owner" | "member" | "admin";
+                    role: "owner" | "admin" | "member";
                     createdAt: Date;
                     userId: string;
                     user: {
@@ -8371,7 +8371,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
             } : {
                 id: string;
                 organizationId: string;
-                role: "owner" | "member" | "admin";
+                role: "owner" | "admin" | "member";
                 createdAt: Date;
                 userId: string;
                 user: {
@@ -8685,7 +8685,7 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                     sortDirection?: "asc" | "desc" | undefined;
                     filterField?: string | undefined;
                     filterValue?: string | number | boolean | undefined;
-                    filterOperator?: "eq" | "ne" | "lt" | "lte" | "gt" | "gte" | "contains" | undefined;
+                    filterOperator?: "contains" | "eq" | "ne" | "lt" | "lte" | "gt" | "gte" | undefined;
                     organizationId?: string | undefined;
                 } | undefined;
             } & {
@@ -8749,13 +8749,13 @@ declare const organization: <O extends OrganizationOptions>(options?: O) => {
                     filterField: z.ZodOptional<z.ZodString>;
                     filterValue: z.ZodOptional<z.ZodUnion<[z.ZodUnion<[z.ZodString, z.ZodNumber]>, z.ZodBoolean]>>;
                     filterOperator: z.ZodOptional<z.ZodEnum<{
+                        contains: "contains";
                         eq: "eq";
                         ne: "ne";
                         lt: "lt";
                         lte: "lte";
                         gt: "gt";
                         gte: "gte";
-                        contains: "contains";
                     }>>;
                     organizationId: z.ZodOptional<z.ZodString>;
                 }, z.core.$strip>>;

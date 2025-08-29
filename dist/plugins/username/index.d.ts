@@ -1,9 +1,9 @@
 import * as better_call from 'better-call';
-import { I as InferOptionSchema, p as AuthContext, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.DYl3hECa.js';
+import { I as InferOptionSchema, p as AuthContext, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.DtcwfLkb.js';
 import * as z from 'zod/v4';
 import 'kysely';
 import '../../shared/better-auth.DTtXpZYr.js';
-import '../../shared/better-auth.CZoC82JS.js';
+import '../../shared/better-auth.BrqjqzND.js';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
@@ -24,14 +24,14 @@ declare const getSchema: (normalizer: {
                 unique: true;
                 returned: true;
                 transform: {
-                    input(value: string | number | boolean | Date | string[] | number[] | null | undefined): string | null | undefined;
+                    input(value: string | number | boolean | string[] | Date | number[] | null | undefined): string | null | undefined;
                 };
             };
             displayUsername: {
                 type: "string";
                 required: false;
                 transform: {
-                    input(value: string | number | boolean | Date | string[] | number[] | null | undefined): string | null | undefined;
+                    input(value: string | number | boolean | string[] | Date | number[] | null | undefined): string | null | undefined;
                 };
             };
         };

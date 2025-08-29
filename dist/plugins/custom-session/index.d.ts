@@ -1,9 +1,9 @@
 import * as better_call from 'better-call';
-import { B as BetterAuthOptions, q as InferUser, r as InferSession, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.DYl3hECa.js';
+import { B as BetterAuthOptions, q as InferUser, r as InferSession, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.DtcwfLkb.js';
 import * as z from 'zod/v4';
 import 'kysely';
 import '../../shared/better-auth.DTtXpZYr.js';
-import '../../shared/better-auth.CZoC82JS.js';
+import '../../shared/better-auth.BrqjqzND.js';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';

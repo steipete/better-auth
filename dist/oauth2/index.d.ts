@@ -1,8 +1,8 @@
-import { P as ProviderOptions, O as OAuth2Tokens } from '../shared/better-auth.CZoC82JS.js';
-export { a as OAuth2UserInfo, b as OAuthProvider } from '../shared/better-auth.CZoC82JS.js';
+import { P as ProviderOptions, O as OAuth2Tokens } from '../shared/better-auth.BrqjqzND.js';
+export { a as OAuth2UserInfo, b as OAuthProvider } from '../shared/better-auth.BrqjqzND.js';
 import * as jose from 'jose';
-import { p as AuthContext, G as GenericEndpointContext, U as User, O as Account } from '../shared/better-auth.DYl3hECa.js';
-export { g as generateState, p as parseState } from '../shared/better-auth.CCy36NmE.js';
+import { p as AuthContext, G as GenericEndpointContext, U as User, O as Account } from '../shared/better-auth.DtcwfLkb.js';
+export { g as generateState, p as parseState } from '../shared/better-auth.un9xg5kG.js';
 import '../shared/better-auth.DTtXpZYr.js';
 import 'zod/v4';
 import 'kysely';

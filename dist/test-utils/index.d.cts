@@ -1,12 +1,12 @@
 import * as nanostores from 'nanostores';
 import * as _better_fetch_fetch from '@better-fetch/fetch';
 import { SuccessContext } from '@better-fetch/fetch';
-import { C as ClientOptions, B as BetterAuthClientPlugin, I as IsSignal, d as InferRoute, c as InferErrorCodes } from '../shared/better-auth.Bp-pebRv.cjs';
-import { B as BetterAuthOptions, U as User, t as InferAPI, a as Adapter, u as AdditionalSessionFieldsOutput, n as Auth, v as AdditionalUserFieldsOutput, w as InferFieldsFromPlugins, x as InferFieldsFromOptions, y as AdditionalUserFieldsInput, h as BetterAuthPlugin, p as AuthContext, z as InferPluginTypes, i as InferPluginErrorCodes, F as FilterActions, S as Session, D as setCookieToHeader } from '../shared/better-auth.C0MfnhMy.cjs';
+import { C as ClientOptions, B as BetterAuthClientPlugin, I as IsSignal, d as InferRoute, c as InferErrorCodes } from '../shared/better-auth.QSzm4Lwh.cjs';
+import { B as BetterAuthOptions, U as User, t as InferAPI, a as Adapter, u as AdditionalSessionFieldsOutput, n as Auth, v as AdditionalUserFieldsOutput, w as InferFieldsFromPlugins, x as InferFieldsFromOptions, y as AdditionalUserFieldsInput, h as BetterAuthPlugin, p as AuthContext, z as InferPluginTypes, i as InferPluginErrorCodes, F as FilterActions, S as Session, D as setCookieToHeader } from '../shared/better-auth.Bs92qm_m.cjs';
 import * as better_call from 'better-call';
 import { U as UnionToIntersection, S as StripEmptyObjects, a as Prettify } from '../shared/better-auth.DTtXpZYr.cjs';
 import * as zod_v4_core from 'zod/v4/core';
-import { O as OAuth2Tokens, a as OAuth2UserInfo } from '../shared/better-auth.C7l4WiP6.cjs';
+import { O as OAuth2Tokens, a as OAuth2UserInfo } from '../shared/better-auth.e9wCjqAx.cjs';
 import * as zod from 'zod';
 import { Kysely } from 'kysely';
 import 'zod/v4';
