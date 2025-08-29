@@ -1,4 +1,4 @@
-import { L as LiteralString, a as Prettify } from './better-auth.DTtXpZYr.mjs';
+import { L as LiteralString, a as Prettify } from './better-auth.DTtXpZYr.js';
 import * as z from 'zod/v4';
 import * as jose from 'jose';
 
@@ -2680,7 +2680,7 @@ declare const apple: (options: AppleOptions) => {
     } | null>;
     options: AppleOptions;
 };
-declare const getApplePublicKey: (kid: string) => Promise<Uint8Array<ArrayBufferLike> | jose.KeyLike>;
+declare const getApplePublicKey: (kid: string) => Promise<jose.KeyLike | Uint8Array<ArrayBufferLike>>;
 
 declare const socialProviders: {
     apple: (options: AppleOptions) => {

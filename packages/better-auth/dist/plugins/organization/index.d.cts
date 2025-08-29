@@ -1,5 +1,5 @@
 import * as z from 'zod/v4';
-import { U as User, S as Session, p as AuthContext, J as FieldAttribute, ai as InferAdditionalFieldsFromPluginOptions, G as GenericEndpointContext } from '../../shared/better-auth.C0MfnhMy.cjs';
+import { U as User, S as Session, p as AuthContext, J as FieldAttribute, ai as InferAdditionalFieldsFromPluginOptions, G as GenericEndpointContext } from '../../shared/better-auth.DeqVIUuX.cjs';
 import { AccessControl, Role, Statements } from '../access/index.cjs';
 import * as better_call from 'better-call';
 import { Prettify } from 'better-call';
@@ -7,7 +7,7 @@ import { defaultRoles } from './access/index.cjs';
 export { adminAc, defaultAc, defaultStatements, memberAc, ownerAc } from './access/index.cjs';
 import 'kysely';
 import '../../shared/better-auth.DTtXpZYr.cjs';
-import '../../shared/better-auth.C7l4WiP6.cjs';
+import '../../shared/better-auth.e9wCjqAx.cjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';

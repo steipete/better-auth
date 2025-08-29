@@ -1,4 +1,4 @@
-import { G as GenericEndpointContext, I as InferOptionSchema, H as HookEndpointContext, p as AuthContext } from './better-auth.DYl3hECa.js';
+import { G as GenericEndpointContext, I as InferOptionSchema, H as HookEndpointContext, p as AuthContext } from './better-auth.CNbgPNhQ.js';
 import { Statements } from '../plugins/access/index.js';
 import * as zod_v4_core from 'zod/v4/core';
 import * as zod from 'zod';
@@ -184,8 +184,8 @@ declare const apiKeySchema: ({ timeWindow, rateLimitMax, }: {
                 required: false;
                 input: true;
                 transform: {
-                    input(value: string | number | boolean | Date | string[] | number[] | null | undefined): string;
-                    output(value: string | number | boolean | Date | string[] | number[] | null | undefined): any;
+                    input(value: string | number | boolean | string[] | Date | number[] | null | undefined): string;
+                    output(value: string | number | boolean | string[] | Date | number[] | null | undefined): any;
                 };
             };
         };
@@ -1894,8 +1894,8 @@ declare const apiKey: (options?: ApiKeyOptions) => {
                     required: false;
                     input: true;
                     transform: {
-                        input(value: string | number | boolean | Date | string[] | number[] | null | undefined): string;
-                        output(value: string | number | boolean | Date | string[] | number[] | null | undefined): any;
+                        input(value: string | number | boolean | string[] | Date | number[] | null | undefined): string;
+                        output(value: string | number | boolean | string[] | Date | number[] | null | undefined): any;
                     };
                 };
             };

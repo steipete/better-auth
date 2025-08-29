@@ -4,7 +4,7 @@ import { EndpointContext, InputContext, CookieOptions, Endpoint, Middleware } fr
 import * as z from 'zod/v4';
 import { ZodSchema } from 'zod/v4';
 import { b as LiteralUnion, L as LiteralString, D as DeepPartial, U as UnionToIntersection, S as StripEmptyObjects, a as Prettify, O as OmitId, P as PrettifyDeep, E as Expand } from './better-auth.DTtXpZYr.mjs';
-import { b as OAuthProvider, S as SocialProviders, c as SocialProviderList, O as OAuth2Tokens, a as OAuth2UserInfo } from './better-auth.2HpcRfGI.mjs';
+import { b as OAuthProvider, S as SocialProviders, c as SocialProviderList, O as OAuth2Tokens, a as OAuth2UserInfo } from './better-auth.XX3IEFux.mjs';
 import * as zod_v4_core from 'zod/v4/core';
 import * as zod from 'zod';
 import { Database } from 'better-sqlite3';

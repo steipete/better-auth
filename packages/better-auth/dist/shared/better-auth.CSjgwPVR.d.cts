@@ -1,7 +1,7 @@
-import { h as BetterAuthPlugin, B as BetterAuthOptions, ag as InferFieldsInputClient, ae as InferFieldsOutput, U as User, S as Session, n as Auth } from './better-auth.D_5UBjqH.mjs';
+import { h as BetterAuthPlugin, B as BetterAuthOptions, ag as InferFieldsInputClient, ae as InferFieldsOutput, U as User, S as Session, n as Auth } from './better-auth.DeqVIUuX.cjs';
 import { BetterFetchOption, BetterFetchResponse, BetterFetch, BetterFetchPlugin } from '@better-fetch/fetch';
 import { WritableAtom, Atom } from 'nanostores';
-import { U as UnionToIntersection, H as HasRequiredKeys, a as Prettify, L as LiteralString, S as StripEmptyObjects } from './better-auth.DTtXpZYr.mjs';
+import { U as UnionToIntersection, H as HasRequiredKeys, a as Prettify, L as LiteralString, S as StripEmptyObjects } from './better-auth.DTtXpZYr.cjs';
 import { Endpoint, InputContext, StandardSchemaV1 } from 'better-call';
 
 type CamelCase<S extends string> = S extends `${infer P1}-${infer P2}${infer P3}` ? `${Lowercase<P1>}${Uppercase<P2>}${CamelCase<P3>}` : Lowercase<S>;

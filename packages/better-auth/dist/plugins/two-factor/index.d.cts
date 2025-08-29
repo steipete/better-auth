@@ -1,10 +1,10 @@
 import * as better_call from 'better-call';
 import * as z from 'zod/v4';
-import { U as User, I as InferOptionSchema, l as AuthEndpoint, H as HookEndpointContext } from '../../shared/better-auth.C0MfnhMy.cjs';
+import { U as User, I as InferOptionSchema, l as AuthEndpoint, H as HookEndpointContext } from '../../shared/better-auth.DeqVIUuX.cjs';
 import { L as LiteralString } from '../../shared/better-auth.DTtXpZYr.cjs';
 import * as _better_fetch_fetch from '@better-fetch/fetch';
 import 'kysely';
-import '../../shared/better-auth.C7l4WiP6.cjs';
+import '../../shared/better-auth.e9wCjqAx.cjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
