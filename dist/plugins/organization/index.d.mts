@@ -351,10 +351,10 @@ interface OrganizationOptions {
 
 declare const role: z.ZodString;
 declare const invitationStatus: z.ZodDefault<z.ZodEnum<{
+    pending: "pending";
     accepted: "accepted";
     canceled: "canceled";
     rejected: "rejected";
-    pending: "pending";
 }>>;
 declare const organizationSchema: z.ZodObject<{
     id: z.ZodDefault<z.ZodString>;
@@ -377,10 +377,10 @@ declare const invitationSchema: z.ZodObject<{
     email: z.ZodString;
     role: z.ZodString;
     status: z.ZodDefault<z.ZodEnum<{
+        pending: "pending";
         accepted: "accepted";
         canceled: "canceled";
         rejected: "rejected";
-        pending: "pending";
     }>>;
     teamId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     inviterId: z.ZodString;

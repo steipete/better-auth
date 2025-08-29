@@ -124,7 +124,7 @@ declare function getTelemetryAuthConfig(options: BetterAuthOptions, context?: Te
     };
     account: {
         modelName: string | undefined;
-        fields: Partial<Record<"userId" | "createdAt" | "updatedAt" | "scope" | "accessToken" | "refreshToken" | "accessTokenExpiresAt" | "refreshTokenExpiresAt" | "idToken" | "providerId" | "accountId" | "password", string>> | undefined;
+        fields: Partial<Record<"userId" | "createdAt" | "updatedAt" | "scope" | "accessToken" | "refreshToken" | "accessTokenExpiresAt" | "refreshTokenExpiresAt" | "idToken" | "password" | "providerId" | "accountId", string>> | undefined;
         encryptOAuthTokens: boolean | undefined;
         updateAccountOnSignIn: boolean | undefined;
         accountLinking: {
