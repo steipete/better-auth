@@ -1,0 +1,105 @@
+import 'better-call';
+import '../shared/better-auth.BFC9LEGJ.mjs';
+import { c as createAuthMiddleware } from '../shared/better-auth.mTsIPbfk.mjs';
+import 'zod/v4';
+import '../shared/better-auth.CMQ3rA-I.mjs';
+import '@better-auth/utils/base64';
+import '@better-auth/utils/hmac';
+import '../shared/better-auth.D-CMlTs_.mjs';
+import '@better-auth/utils/binary';
+import { p as parseSetCookieHeader } from '../shared/better-auth.XCSUfGli.mjs';
+import '../shared/better-auth.n2KFGwjY.mjs';
+import '../shared/better-auth.CW6D9eSx.mjs';
+import '@better-auth/utils/hash';
+import '../crypto/index.mjs';
+import '@noble/ciphers/chacha';
+import '@noble/ciphers/utils';
+import '@noble/ciphers/webcrypto';
+import 'jose';
+import '@noble/hashes/scrypt';
+import '@better-auth/utils';
+import '@better-auth/utils/hex';
+import '@noble/hashes/utils';
+import '../shared/better-auth.DdzSJf-n.mjs';
+import '../shared/better-auth.B4Qoxdgc.mjs';
+import '@better-auth/utils/random';
+import '@better-fetch/fetch';
+import '../shared/better-auth.CuS_eDdK.mjs';
+import 'jose/errors';
+import '../shared/better-auth.DkAEG6hU.mjs';
+import '../shared/better-auth.BUPPRXfK.mjs';
+import 'defu';
+
+const toSvelteKitHandler = (auth) => {
+  return (event) => auth.handler(event.request);
+};
+const svelteKitHandler = async ({
+  auth,
+  event,
+  resolve,
+  building
+}) => {
+  if (building) {
+    return resolve(event);
+  }
+  const { request, url } = event;
+  if (isAuthPath(url.toString(), auth.options)) {
+    return auth.handler(request);
+  }
+  return resolve(event);
+};
+function isAuthPath(url, options) {
+  const _url = new URL(url);
+  const baseURL = new URL(
+    `${options.baseURL || _url.origin}${options.basePath || "/api/auth"}`
+  );
+  if (_url.origin !== baseURL.origin) return false;
+  if (!_url.pathname.startsWith(
+    baseURL.pathname.endsWith("/") ? baseURL.pathname : `${baseURL.pathname}/`
+  ))
+    return false;
+  return true;
+}
+const sveltekitCookies = (getRequestEvent) => {
+  return {
+    id: "sveltekit-cookies",
+    hooks: {
+      after: [
+        {
+          matcher() {
+            return true;
+          },
+          handler: createAuthMiddleware(async (ctx) => {
+            const returned = ctx.context.responseHeaders;
+            if ("_flag" in ctx && ctx._flag === "router") {
+              return;
+            }
+            if (returned instanceof Headers) {
+              const setCookies = returned?.get("set-cookie");
+              if (!setCookies) return;
+              const event = getRequestEvent();
+              if (!event) return;
+              const parsed = parseSetCookieHeader(setCookies);
+              for (const [name, { value, ...ops }] of parsed) {
+                try {
+                  event.cookies.set(name, decodeURIComponent(value), {
+                    sameSite: ops.samesite,
+                    path: ops.path || "/",
+                    expires: ops.expires,
+                    secure: ops.secure,
+                    httpOnly: ops.httponly,
+                    domain: ops.domain,
+                    maxAge: ops["max-age"]
+                  });
+                } catch (e) {
+                }
+              }
+            }
+          })
+        }
+      ]
+    }
+  };
+};
+
+export { isAuthPath, svelteKitHandler, sveltekitCookies, toSvelteKitHandler };

@@ -118,7 +118,7 @@ out
 # Nuxt.js build / generate output
 
 .nuxt
-dist
+# dist - commented out to include built files for GitHub installs
 
 # Gatsby files
 
