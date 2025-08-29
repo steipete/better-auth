@@ -85,22 +85,7 @@ const createKyselyAdapter = async (config) => {
       database: db
     });
   }
-  if ("createSession" in db) {
-    let DatabaseSync = void 0;
-    try {
-      ({ DatabaseSync } = await import('node:sqlite'));
-    } catch (error) {
-      if (error !== null && typeof error === "object" && "code" in error && error.code !== "ERR_UNKNOWN_BUILTIN_MODULE") {
-        throw error;
-      }
-    }
-    if (DatabaseSync && db instanceof DatabaseSync) {
-      const { NodeSqliteDialect } = await import('../chunks/node-sqlite-dialect.cjs');
-      dialect = new NodeSqliteDialect({
-        database: db
-      });
-    }
-  }
+  // SQLite support removed for Edge runtime compatibility
   return {
     kysely: dialect ? new kysely.Kysely({ dialect }) : null,
     databaseType
