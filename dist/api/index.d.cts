@@ -1,9 +1,0 @@
-import '../shared/better-auth.C7l4WiP6.cjs';
-export { l as AuthEndpoint, m as AuthMiddleware, bn as accountInfo, aQ as callbackOAuth, be as changeEmail, ba as changePassword, k as createAuthEndpoint, j as createAuthMiddleware, b5 as createEmailVerificationToken, bc as deleteUser, bd as deleteUserCallback, bf as error, b1 as forgetPassword, b3 as forgetPasswordCallback, aW as freshSessionMiddleware, bl as getAccessToken, aM as getEndpoints, aS as getSession, aT as getSessionFromCtx, aR as getSessionQuerySchema, bj as linkSocialAccount, aX as listSessions, bi as listUserAccounts, bg as ok, o as optionsMiddleware, bp as originCheck, bo as originCheckMiddleware, bm as refreshToken, aV as requestOnlySessionMiddleware, b0 as requestPasswordReset, b2 as requestPasswordResetCallback, b4 as resetPassword, a_ as revokeOtherSessions, aY as revokeSession, aZ as revokeSessions, aN as router, b7 as sendVerificationEmail, b6 as sendVerificationEmailFn, aU as sessionMiddleware, bb as setPassword, aP as signInEmail, aO as signInSocial, a$ as signOut, bh as signUpEmail, bk as unlinkAccount, b9 as updateUser, b8 as verifyEmail } from '../shared/better-auth.fpJnkfSu.cjs';
-export { APIError } from 'better-call';
-import '../shared/better-auth.DTtXpZYr.cjs';
-import 'zod/v4/core';
-import 'zod';
-import 'zod/v4';
-import 'jose';
-import 'kysely';
