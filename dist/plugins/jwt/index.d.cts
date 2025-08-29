@@ -1,12 +1,12 @@
 import * as better_call from 'better-call';
-import { U as User, S as Session, I as InferOptionSchema, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.Bs92qm_m.cjs';
+import { U as User, S as Session, I as InferOptionSchema, G as GenericEndpointContext, H as HookEndpointContext } from '../../shared/better-auth.fpJnkfSu.cjs';
 import * as jose from 'jose';
 import { JWTPayload, JSONWebKeySet } from 'jose';
 import zod__default from 'zod';
 import { A as Awaitable } from '../../shared/better-auth.DTtXpZYr.cjs';
 import 'kysely';
 import 'zod/v4';
-import '../../shared/better-auth.e9wCjqAx.cjs';
+import '../../shared/better-auth.C7l4WiP6.cjs';
 import 'zod/v4/core';
 
 declare const schema: {

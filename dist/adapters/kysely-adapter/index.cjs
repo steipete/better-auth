@@ -1,6 +1,6 @@
 'use strict';
 
-const kyselyAdapter = require('../../shared/better-auth.BTCM34MQ.cjs');
+const kyselyAdapter = require('../../shared/better-auth.zsL9dsaY.cjs');
 require('kysely');
 require('../../shared/better-auth.ZhaALnFz.cjs');
 require('../../shared/better-auth.vPQBmXQL.cjs');

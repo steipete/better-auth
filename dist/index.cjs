@@ -1,6 +1,6 @@
 'use strict';
 
-const auth = require('./shared/better-auth.CMbajnZh.cjs');
+const auth = require('./shared/better-auth.RIhT_gCf.cjs');
 const index = require('./shared/better-auth.ANpbi45u.cjs');
 const misc = require('./shared/better-auth.BLDOwz3i.cjs');
 const socialProviders_index = require('./shared/better-auth.Dg3Pwtlb.cjs');
@@ -33,9 +33,9 @@ require('@better-auth/utils/hex');
 require('@noble/hashes/utils');
 require('./shared/better-auth.CYeOI8C-.cjs');
 require('@better-auth/utils/random');
-require('./shared/better-auth.WGkhpiIA.cjs');
+require('./shared/better-auth.BtEGXjCf.cjs');
 require('./shared/better-auth.Bt_3DcBl.cjs');
-require('./shared/better-auth.BTCM34MQ.cjs');
+require('./shared/better-auth.zsL9dsaY.cjs');
 require('kysely');
 require('./shared/better-auth.ZhaALnFz.cjs');
 require('./shared/better-auth.CwxQpTGf.cjs');

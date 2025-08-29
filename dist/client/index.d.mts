@@ -1,9 +1,9 @@
-import { f as BASE_ERROR_CODES, h as BetterAuthPlugin, B as BetterAuthOptions } from '../shared/better-auth.6m9muJRT.mjs';
+import { f as BASE_ERROR_CODES, h as BetterAuthPlugin, B as BetterAuthOptions } from '../shared/better-auth.DkNEPIuu.mjs';
 import * as _better_fetch_fetch from '@better-fetch/fetch';
 import { BetterFetchError, BetterFetch, BetterFetchOption } from '@better-fetch/fetch';
 export * from '@better-fetch/fetch';
-import { C as ClientOptions, B as BetterAuthClientPlugin, I as IsSignal, a as InferClientAPI, b as InferActions, c as InferErrorCodes } from '../shared/better-auth.DDWr4Klr.mjs';
-export { A as AtomListener, h as InferAdditionalFromClient, e as InferPluginsFromClient, f as InferSessionFromClient, g as InferUserFromClient, S as Store } from '../shared/better-auth.DDWr4Klr.mjs';
+import { C as ClientOptions, B as BetterAuthClientPlugin, I as IsSignal, a as InferClientAPI, b as InferActions, c as InferErrorCodes } from '../shared/better-auth.xHOkWQhW.mjs';
+export { A as AtomListener, h as InferAdditionalFromClient, e as InferPluginsFromClient, f as InferSessionFromClient, g as InferUserFromClient, S as Store } from '../shared/better-auth.xHOkWQhW.mjs';
 import * as nanostores from 'nanostores';
 import { Atom, PreinitializedWritableAtom } from 'nanostores';
 export * from 'nanostores';
@@ -11,7 +11,7 @@ import { U as UnionToIntersection, P as PrettifyDeep } from '../shared/better-au
 import 'kysely';
 import 'better-call';
 import 'zod/v4';
-import '../shared/better-auth.XX3IEFux.mjs';
+import '../shared/better-auth.2HpcRfGI.mjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';

@@ -3,7 +3,6 @@ import {
 	type Dialect,
 	MysqlDialect,
 	PostgresDialect,
-	SqliteDialect,
 } from "kysely";
 import type { BetterAuthOptions } from "../../types";
 import type { KyselyDatabaseType } from "./types";
@@ -18,9 +17,7 @@ export function getKyselyDatabaseType(
 		return getKyselyDatabaseType(db.dialect as Dialect);
 	}
 	if ("createDriver" in db) {
-		if (db instanceof SqliteDialect) {
-			return "sqlite";
-		}
+		// SQLite support removed for Edge runtime compatibility
 		if (db instanceof MysqlDialect) {
 			return "mysql";
 		}
@@ -31,21 +28,13 @@ export function getKyselyDatabaseType(
 			return "mssql";
 		}
 	}
-	if ("aggregate" in db) {
-		return "sqlite";
-	}
+	// SQLite checks removed for Edge runtime compatibility
 
 	if ("getConnection" in db) {
 		return "mysql";
 	}
 	if ("connect" in db) {
 		return "postgres";
-	}
-	if ("fileControl" in db) {
-		return "sqlite";
-	}
-	if ("open" in db && "close" in db && "prepare" in db) {
-		return "sqlite";
 	}
 	return null;
 }
@@ -82,11 +71,7 @@ export const createKyselyAdapter = async (config: BetterAuthOptions) => {
 		dialect = db;
 	}
 
-	if ("aggregate" in db && !("createSession" in db)) {
-		dialect = new SqliteDialect({
-			database: db,
-		});
-	}
+	// SQLite dialect creation removed for Edge runtime compatibility
 
 	if ("getConnection" in db) {
 		// @ts-expect-error - mysql2/promise
@@ -99,35 +84,7 @@ export const createKyselyAdapter = async (config: BetterAuthOptions) => {
 		});
 	}
 
-	if ("fileControl" in db) {
-		const { BunSqliteDialect } = await import("./bun-sqlite-dialect");
-		dialect = new BunSqliteDialect({
-			database: db,
-		});
-	}
-
-	if ("createSession" in db) {
-		let DatabaseSync: typeof import("node:sqlite").DatabaseSync | undefined =
-			undefined;
-		try {
-			({ DatabaseSync } = await import("node:sqlite"));
-		} catch (error: unknown) {
-			if (
-				error !== null &&
-				typeof error === "object" &&
-				"code" in error &&
-				error.code !== "ERR_UNKNOWN_BUILTIN_MODULE"
-			) {
-				throw error;
-			}
-		}
-		if (DatabaseSync && db instanceof DatabaseSync) {
-			const { NodeSqliteDialect } = await import("./node-sqlite-dialect");
-			dialect = new NodeSqliteDialect({
-				database: db,
-			});
-		}
-	}
+	// Bun SQLite and Node SQLite support removed for Edge runtime compatibility
 
 	return {
 		kysely: dialect ? new Kysely<any>({ dialect }) : null,

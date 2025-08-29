@@ -1,4 +1,4 @@
-export { b as betterAuth, c as createTelemetry, g as getTelemetryAuthConfig } from './shared/better-auth.CbzQTz8B.mjs';
+export { b as betterAuth, c as createTelemetry, g as getTelemetryAuthConfig } from './shared/better-auth.DH17VBYM.mjs';
 export { B as BetterAuthError, M as MissingDependencyError } from './shared/better-auth.DdzSJf-n.mjs';
 export { c as capitalizeFirstLetter } from './shared/better-auth.D-2CmEwz.mjs';
 export { H as HIDE_METADATA, g as generateState, p as parseState } from './shared/better-auth.Dk6y9Vrc.mjs';
@@ -31,9 +31,9 @@ import '@better-auth/utils/hex';
 import '@noble/hashes/utils';
 import './shared/better-auth.B4Qoxdgc.mjs';
 import '@better-auth/utils/random';
-import './shared/better-auth.CbEkjMAM.mjs';
+import './shared/better-auth.BFeOJn97.mjs';
 import './shared/better-auth.BfEVD9iF.mjs';
-import './shared/better-auth.DIh5unun.mjs';
+import './shared/better-auth.DtrYXKjD.mjs';
 import 'kysely';
 import './shared/better-auth.CfB-tQyX.mjs';
 import './shared/better-auth.DayjxkqD.mjs';

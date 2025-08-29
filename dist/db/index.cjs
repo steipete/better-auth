@@ -1,6 +1,6 @@
 'use strict';
 
-const getMigration = require('../shared/better-auth.WGkhpiIA.cjs');
+const getMigration = require('../shared/better-auth.BtEGXjCf.cjs');
 const getTables = require('../shared/better-auth.Bt_3DcBl.cjs');
 const toZod = require('../shared/better-auth.BT1jd5k2.cjs');
 const schema = require('../shared/better-auth.BIMq4RPW.cjs');
@@ -25,7 +25,7 @@ require('@better-auth/utils/hex');
 require('@noble/hashes/utils');
 require('../shared/better-auth.CYeOI8C-.cjs');
 require('../shared/better-auth.ANpbi45u.cjs');
-require('../shared/better-auth.BTCM34MQ.cjs');
+require('../shared/better-auth.zsL9dsaY.cjs');
 require('kysely');
 require('../shared/better-auth.ZhaALnFz.cjs');
 require('../shared/better-auth.CwxQpTGf.cjs');

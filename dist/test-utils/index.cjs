@@ -1,9 +1,9 @@
 'use strict';
 
 const vitest = require('vitest');
-const auth = require('../shared/better-auth.CMbajnZh.cjs');
+const auth = require('../shared/better-auth.RIhT_gCf.cjs');
 const vanilla = require('../shared/better-auth.CmdI9lHT.cjs');
-const getMigration = require('../shared/better-auth.WGkhpiIA.cjs');
+const getMigration = require('../shared/better-auth.BtEGXjCf.cjs');
 require('../shared/better-auth.B6fIklBU.cjs');
 require('@better-auth/utils/base64');
 require('@better-auth/utils/hmac');
@@ -66,7 +66,7 @@ require('../shared/better-auth.Bg6iw3ig.cjs');
 require('defu');
 require('../shared/better-auth.Bt_3DcBl.cjs');
 require('../shared/better-auth.CDXNofOe.cjs');
-require('../shared/better-auth.BTCM34MQ.cjs');
+require('../shared/better-auth.zsL9dsaY.cjs');
 require('../shared/better-auth.ZhaALnFz.cjs');
 require('../shared/better-auth.CtToz4qL.cjs');
 require('nanostores');

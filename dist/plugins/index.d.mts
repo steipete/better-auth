@@ -3,8 +3,8 @@ export { adminAc, defaultAc, defaultRoles, defaultStatements, memberAc, ownerAc 
 export { TWO_FACTOR_ERROR_CODES, TwoFactorOptions, TwoFactorProvider, TwoFactorTable, UserWithTwoFactor, twoFactor, twoFactorClient } from './two-factor/index.mjs';
 export { USERNAME_ERROR_CODES, UsernameOptions, username } from './username/index.mjs';
 export { bearer } from './bearer/index.mjs';
-import { G as GenericEndpointContext, B as BetterAuthOptions } from '../shared/better-auth.6m9muJRT.mjs';
-export { l as AuthEndpoint, m as AuthMiddleware, g as AuthPluginSchema, h as BetterAuthPlugin, I as InferOptionSchema, i as InferPluginErrorCodes, k as createAuthEndpoint, j as createAuthMiddleware, o as optionsMiddleware } from '../shared/better-auth.6m9muJRT.mjs';
+import { G as GenericEndpointContext, B as BetterAuthOptions } from '../shared/better-auth.DkNEPIuu.mjs';
+export { l as AuthEndpoint, m as AuthMiddleware, g as AuthPluginSchema, h as BetterAuthPlugin, I as InferOptionSchema, i as InferPluginErrorCodes, k as createAuthEndpoint, j as createAuthMiddleware, o as optionsMiddleware } from '../shared/better-auth.DkNEPIuu.mjs';
 export { H as HIDE_METADATA } from '../shared/better-auth.DEHJp1rk.mjs';
 export { magicLink } from './magic-link/index.mjs';
 export { PhoneNumberOptions, UserWithPhoneNumber, phoneNumber } from './phone-number/index.mjs';
@@ -21,7 +21,7 @@ export { OpenAPIOptions, Path, generator, openAPI } from './open-api/index.mjs';
 import { OIDCOptions, OIDCMetadata, OAuthAccessToken } from './oidc-provider/index.mjs';
 export { AuthorizationQuery, Client, CodeVerificationValue, TokenBody, getClient, getMetadata, oidcProvider } from './oidc-provider/index.mjs';
 export { captcha } from './captcha/index.mjs';
-export { A as API_KEY_TABLE_NAME, E as ERROR_CODES, a as apiKey, d as defaultKeyHasher } from '../shared/better-auth.CoLha9l6.mjs';
+export { A as API_KEY_TABLE_NAME, E as ERROR_CODES, a as apiKey, d as defaultKeyHasher } from '../shared/better-auth.sWkNP9eZ.mjs';
 export { HaveIBeenPwnedOptions, haveIBeenPwned } from './haveibeenpwned/index.mjs';
 export { oneTimeToken } from './one-time-token/index.mjs';
 import * as better_call from 'better-call';
@@ -32,7 +32,7 @@ import './access/index.mjs';
 import '../shared/better-auth.DTtXpZYr.mjs';
 import '@better-fetch/fetch';
 import 'kysely';
-import '../shared/better-auth.XX3IEFux.mjs';
+import '../shared/better-auth.2HpcRfGI.mjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
@@ -204,7 +204,7 @@ declare const mcp: (options: MCPOptions) => {
             <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0: {
                 body: {
                     redirect_uris: string[];
-                    token_endpoint_auth_method?: "none" | "client_secret_post" | "client_secret_basic" | undefined;
+                    token_endpoint_auth_method?: "none" | "client_secret_basic" | "client_secret_post" | undefined;
                     grant_types?: ("authorization_code" | "password" | "refresh_token" | "implicit" | "client_credentials" | "urn:ietf:params:oauth:grant-type:jwt-bearer" | "urn:ietf:params:oauth:grant-type:saml2-bearer")[] | undefined;
                     response_types?: ("code" | "token")[] | undefined;
                     client_name?: string | undefined;
@@ -249,8 +249,8 @@ declare const mcp: (options: MCPOptions) => {
                     redirect_uris: z.ZodArray<z.ZodString>;
                     token_endpoint_auth_method: z.ZodOptional<z.ZodDefault<z.ZodEnum<{
                         none: "none";
-                        client_secret_post: "client_secret_post";
                         client_secret_basic: "client_secret_basic";
+                        client_secret_post: "client_secret_post";
                     }>>>;
                     grant_types: z.ZodOptional<z.ZodDefault<z.ZodArray<z.ZodEnum<{
                         authorization_code: "authorization_code";

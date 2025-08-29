@@ -1,7 +1,7 @@
 import { afterAll } from 'vitest';
-import { b as betterAuth } from '../shared/better-auth.CbzQTz8B.mjs';
+import { b as betterAuth } from '../shared/better-auth.DH17VBYM.mjs';
 import { c as createAuthClient } from '../shared/better-auth.DVsI0DHa.mjs';
-import { e as getMigrations, a as getAdapter } from '../shared/better-auth.CbEkjMAM.mjs';
+import { e as getMigrations, a as getAdapter } from '../shared/better-auth.BFeOJn97.mjs';
 import '../shared/better-auth.CMQ3rA-I.mjs';
 import '@better-auth/utils/base64';
 import '@better-auth/utils/hmac';
@@ -64,7 +64,7 @@ import '../shared/better-auth.BUPPRXfK.mjs';
 import 'defu';
 import '../shared/better-auth.BfEVD9iF.mjs';
 import '../shared/better-auth.YwDQhoPc.mjs';
-import '../shared/better-auth.DIh5unun.mjs';
+import '../shared/better-auth.DtrYXKjD.mjs';
 import '../shared/better-auth.CfB-tQyX.mjs';
 import '../shared/better-auth.CGGao4aY.mjs';
 import 'nanostores';

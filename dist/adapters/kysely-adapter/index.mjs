@@ -1,4 +1,4 @@
-export { c as createKyselyAdapter, g as getKyselyDatabaseType, k as kyselyAdapter } from '../../shared/better-auth.DIh5unun.mjs';
+export { c as createKyselyAdapter, g as getKyselyDatabaseType, k as kyselyAdapter } from '../../shared/better-auth.DtrYXKjD.mjs';
 import 'kysely';
 import '../../shared/better-auth.CfB-tQyX.mjs';
 import '../../shared/better-auth.BZZKN1g7.mjs';

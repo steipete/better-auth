@@ -1,10 +1,10 @@
-export { O as Account, a as Adapter, Y as AdapterInstance, X as AdapterSchemaCreation, N as AdditionalSessionFieldsInput, u as AdditionalSessionFieldsOutput, y as AdditionalUserFieldsInput, v as AdditionalUserFieldsOutput, p as AuthContext, g as AuthPluginSchema, B as BetterAuthOptions, h as BetterAuthPlugin, F as FilterActions, _ as FilteredAPI, G as GenericEndpointContext, H as HookEndpointContext, t as InferAPI, I as InferOptionSchema, i as InferPluginErrorCodes, z as InferPluginTypes, r as InferSession, $ as InferSessionAPI, q as InferUser, M as Models, R as RateLimit, Z as SecondaryStorage, S as Session, U as User, V as Verification, Q as Where, P as init } from '../shared/better-auth.6m9muJRT.mjs';
-export { A as AtomListener, B as BetterAuthClientPlugin, C as ClientOptions, b as InferActions, h as InferAdditionalFromClient, a as InferClientAPI, c as InferErrorCodes, e as InferPluginsFromClient, f as InferSessionFromClient, g as InferUserFromClient, I as IsSignal, S as Store } from '../shared/better-auth.DDWr4Klr.mjs';
+export { O as Account, a as Adapter, Y as AdapterInstance, X as AdapterSchemaCreation, N as AdditionalSessionFieldsInput, u as AdditionalSessionFieldsOutput, y as AdditionalUserFieldsInput, v as AdditionalUserFieldsOutput, p as AuthContext, g as AuthPluginSchema, B as BetterAuthOptions, h as BetterAuthPlugin, F as FilterActions, _ as FilteredAPI, G as GenericEndpointContext, H as HookEndpointContext, t as InferAPI, I as InferOptionSchema, i as InferPluginErrorCodes, z as InferPluginTypes, r as InferSession, $ as InferSessionAPI, q as InferUser, M as Models, R as RateLimit, Z as SecondaryStorage, S as Session, U as User, V as Verification, Q as Where, P as init } from '../shared/better-auth.DkNEPIuu.mjs';
+export { A as AtomListener, B as BetterAuthClientPlugin, C as ClientOptions, b as InferActions, h as InferAdditionalFromClient, a as InferClientAPI, c as InferErrorCodes, e as InferPluginsFromClient, f as InferSessionFromClient, g as InferUserFromClient, I as IsSignal, S as Store } from '../shared/better-auth.xHOkWQhW.mjs';
 import 'kysely';
 import 'better-call';
 import 'zod/v4';
 import '../shared/better-auth.DTtXpZYr.mjs';
-import '../shared/better-auth.XX3IEFux.mjs';
+import '../shared/better-auth.2HpcRfGI.mjs';
 import 'jose';
 import 'zod/v4/core';
 import 'zod';
