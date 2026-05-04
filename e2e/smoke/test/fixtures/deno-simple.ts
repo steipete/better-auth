@@ -1,12 +1,7 @@
 import { betterAuth } from "better-auth";
-import { DatabaseSync } from "node:sqlite";
-import { getMigrations } from "better-auth/db";
-
-const database = new DatabaseSync(":memory:");
 
 export const auth = betterAuth({
 	baseURL: "http://localhost:4000",
-	database,
 	emailAndPassword: {
 		enabled: true,
 	},
@@ -14,10 +9,6 @@ export const auth = betterAuth({
 		level: "debug",
 	},
 });
-
-const { runMigrations } = await getMigrations(auth.options);
-
-await runMigrations();
 
 Deno.serve(
 	{

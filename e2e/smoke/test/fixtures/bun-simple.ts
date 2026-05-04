@@ -1,12 +1,7 @@
 import { betterAuth } from "better-auth";
-import Database from "bun:sqlite";
-import { getMigrations } from "better-auth/db";
-
-const database = new Database(":memory:");
 
 export const auth = betterAuth({
 	baseURL: "http://localhost:4000",
-	database,
 	emailAndPassword: {
 		enabled: true,
 	},
@@ -14,10 +9,6 @@ export const auth = betterAuth({
 		level: "debug",
 	},
 });
-
-const { runMigrations } = await getMigrations(auth.options);
-
-await runMigrations();
 
 const server = Bun.serve({
 	fetch: auth.handler,
